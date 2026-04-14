@@ -301,6 +301,10 @@ section {
   max-width: 560px;
 }
 
+.section-text + .section-text {
+  margin-top: 1rem;
+}
+
 /* projects grid */
 .projects-grid {
   display: grid;
