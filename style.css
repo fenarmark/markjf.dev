@@ -303,6 +303,11 @@ nav {
   object-fit: contain;
 }
 
+.icon-item[aria-label="Arduino"] img {
+  width: auto;
+  height: 28px;
+}
+
 .icon-item .icon-hover {
   display: none;
 }
