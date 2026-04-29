@@ -266,9 +266,21 @@ nav {
   color: var(--accent);
 }
 
-.icon-item svg {
+.icon-item img {
   width: 28px;
   height: 28px;
+}
+
+.icon-item .icon-hover {
+  display: none;
+}
+
+.icon-item:hover .icon-default {
+  display: none;
+}
+
+.icon-item:hover .icon-hover {
+  display: block;
 }
 
 /* ── sections ──────────────────────────────────────── */
