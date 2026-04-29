@@ -239,6 +239,37 @@ nav {
   border-color: var(--text);
 }
 
+/* ── kosice clock widget ──────────────────────────── */
+.hero-clock {
+  margin-top: 1.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg);
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+
+.hero-clock svg {
+  color: var(--accent-dim);
+  flex-shrink: 0;
+}
+
+.hero-clock a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.hero-clock a:hover {
+  text-decoration: underline;
+}
+
 /* ── skills / icons strip ──────────────────────────── */
 .icons-strip {
   display: flex;
@@ -269,6 +300,7 @@ nav {
 .icon-item img {
   width: 28px;
   height: 28px;
+  object-fit: contain;
 }
 
 .icon-item .icon-hover {

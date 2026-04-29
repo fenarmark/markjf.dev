@@ -71,6 +71,20 @@
             get in touch
           </a>
         </div>
+
+        <!-- kosice clock -->
+        <div class="hero-clock">
+          <!-- clock icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          Kosice ·
+          <a href="https://24timezones.com/current_time/slovakia_kosice_clock.php"
+             target="_blank" rel="noopener" id="kosice-clock">--:--:--</a>
+        </div>
       </div>
     </div>
   </header>
@@ -243,6 +257,23 @@
       <a href="mailto:mark@markjf.dev">email</a>
     </div>
   </footer>
+  <!-- ── kosice clock script ──────────────────────────── -->
+  <script>
+    (function () {
+      var fmt = new Intl.DateTimeFormat('en-GB', {
+        timeZone: 'Europe/Bratislava',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+      });
+      function tick() {
+        var el = document.getElementById('kosice-clock');
+        if (el) el.textContent = fmt.format(new Date());
+      }
+      tick();
+      setInterval(tick, 1000);
+    })();
+  </script>
 
 </body>
 </html>
