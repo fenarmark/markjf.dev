@@ -170,10 +170,10 @@ nav {
 .hero-heading .cursor {
   display: inline-block;
   width: 3px;
-  height: 1em;
+  height: 0.85em;
   background: var(--accent);
   margin-left: 4px;
-  vertical-align: text-bottom;
+  vertical-align: middle;
   animation: blink 1s step-end infinite;
 }
 
@@ -241,7 +241,9 @@ nav {
 
 /* ── kosice clock widget ──────────────────────────── */
 .hero-clock {
-  margin-top: 1.75rem;
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.25rem;
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
