@@ -1,0 +1,30 @@
+{
+  "name": "markjf.dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fenarmark/markjf.dev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fenarmark/markjf.dev/issues"
+  },
+  "homepage": "https://github.com/fenarmark/markjf.dev#readme",
+  "devDependencies": {
+    "astro": "^6.0.5"
+  },
+  "scripts": {
+  "dev": "astro dev",
+  "build": "astro build",
+  "preview": "astro preview"
+  }
+
+}
