@@ -3,7 +3,7 @@ content:
   - name: pages
     label: Pages
     type: collection
-    path: src/content/blog
+    path: src/pages/posts
     fields:
       - name: title
         type: string
